@@ -23,8 +23,7 @@ checked, so `cp .env.example .env` and `diff .env .env.example` stay blocked.
 
 ## Not covered
 
-- Native `read`, `write`, and `edit` tools. Global `opencode.json` already
-  denies those for `.env` files.
+- Native `read`, `write`, and `edit` tools.
 - Paths built at runtime, such as `cat $(printf .%s env)` or `cat .e''nv`.
   The check is textual by design.
 
